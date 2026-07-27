@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeb Editor & Services - Luxury Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        /* Luxury Header */
+        header {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #d4af37; /* گولڈن بارڈر */
+        }
+        header h1 {
+            font-size: 38px;
+            color: #d4af37; /* لگژری گولڈ کلر */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 16px;
+            color: #9ca3af;
+        }
+        /* Navigation Bar */
+        .nav-bar {
+            background: #111827;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-bar a {
+            color: #f3f4f6;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+        .nav-bar a:hover {
+            color: #d4af37;
+        }
+        /* Services Section */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            color: #d4af37;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1f2937;
+            padding-bottom: 10px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: #1f2937;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: #d4af37;
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .service-content h3 {
+            color: #d4af37;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .service-content p {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .btn-luxury {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+            color: #0b0f19;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .btn-luxury:hover {
+            background: #f3f4f6;
+            color: #111827;
+        }
+        /* Footer */
+        footer {
+            background: #111827;
+            text-align: center;
+            padding: 20px;
+            color: #9ca3af;
+            border-top: 2px solid #1f2937;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeb Editor & Services</h1>
+        <p>Professional Video Editing, Luxury Branding, Logos, Posters & Technical Solutions</p>
+    </header>
+
+    <div class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="admin.html" target="_blank" style="color: #d4af37;">Admin Panel</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container" id="services">
+        <h2 class="section-title">Our Luxury Services</h2>
+        
+        <div class="services-grid">
+            <!-- کارڈ 1 -->
+            <div class="service-card">
+                <img src="graphic.jpg" alt="Graphic Design">
+                <div class="service-content">
+                    <h3>Graphic Design</h3>
+                    <p>برانڈ کی بہترین پہچان کے لیے شاندار لوگو اور لگژری پوسٹرز کی ڈیزائننگ۔</p>
+                    <a href="#contact" class="btn-luxury">View Details</a>
+                </div>
+            </div>
+
+            <!-- کارڈ 2 -->
+            <div class="service-card">
+                <img src="zeb-notes.jpg" alt="Zeb Notes">
+                <div class="service-content">
+                    <h3>Zeb Notes</h3>
+                    <p>آفس آٹومیشن اور تعلیمی مواد کے لیے معیاری نوٹس اور پی ڈی ایف۔</p>
+                    <a href="#contact" class="btn-luxury">View Details</a>
+                </div>
+            </div>
+
+            <!-- کارڈ 3 -->
+            <div class="service-card">
+                <img src="appliance-repair.jpg" alt="Repair Services">
+                <div class="service-content">
+                    <h3>UPS & Appliance Repair</h3>
+                    <p>یو پی ایس، سٹیبلائزر، اور گھریلو الیکٹرانک آلات کی ماہرانہ مرمت۔</p>
+                    <a href="#contact" class="btn-luxury">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeb Edits & Photostate. All Rights Reserved. | Swabi, Pakistan</p>
+    </footer>
+
+</body>
+</html>
+

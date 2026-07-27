@@ -1,0 +1,69 @@
+   
+     /* Images CSS */
+        .logo-img {
+            max-width: auto; /* لوگو کا سائز */
+            height: auto;
+            border-radius: auto; /* لوگو کو گول کرنے کے لیے */
+                    .logo-img {
+            max-width: auto;
+            height: auto;
+            mix-blend-mode: multiply; /* یہ سفید رنگ کو بیک گراؤنڈ کے ساتھ مکس کر کے غائب کر دیتا ہے */
+        }
+
+        }
+        .service-img {
+            width: 20px;
+            height: 30p;
+            border-radius: auto;
+            margin-bottom: auto;
+        }
+                /* کارڈ بٹن کا ڈیزائن */
+        .card-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 10px 20px;
+            margin: 15px 0 20px 0;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* جب ماウス بٹن پر آئے گا */
+        .card-btn:hover {
+            background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+                /* New Modern Navigation Bar CSS */
+        .nav-bar {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%); /* خوبصورت نیلا شیڈ */
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* ہلکا سا شیڈو */
+            border-radius: 8px; /* کناروں کو گول کرنے کے لیے */
+            margin: 10px 20px;
+        }
+        
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+        }
+        
+        .nav-bar a:hover {
+            background-color: #ffffff; /* ہوور کرنے پر سفید بیک گراؤنڈ */
+            color: #1e3c72; /* اور نیلا ٹیکسٹ */
+            transform: scale(1.1); /* تھوڑا سا بڑا ہونے کا ایفیکٹ */
+        }
